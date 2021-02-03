@@ -1,12 +1,4 @@
-function checkCashRegister(price, cash, cid) {
-  var change = [];
-  let result ={};
-  let bal = cid.reduce((accu, curr) => accu + curr[1], 0);
-  var changeT = cash - price;
-  let monArr = cid.map(x => x[0]).reverse();
-  let balArr = cid.map(x => x[1]).reverse();
-  let monAnum = [100, 20, 10, 5, 1, 0.25, 0.1, 0.05, 0.01];
-  if (bal < changeT) {
+
     function checkCashRegister(price, cash, cid) {
       var change = [];
       let result ={};
